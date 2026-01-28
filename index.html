@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BunkIt</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1 class="title">BunkIt</h1>
+    <p class="tagline">Can you bunk today? Let's check!</p>
+
+    <div class="container">
+
+        <div class="questions">
+            <label for="conducted">Number of Classes Conducted</label>
+            <input type="number" id="conducted" placeholder="Eg: 50">
+        </div>
+
+        <div class="questions">
+            <label for="attended">Number of Classes Attended</label>
+            <input type="number" id="attended" placeholder="Eg: 40">
+        </div>
+
+        <div class="questions">
+            <label for="required">Minimum Required Attendance (%)</label>
+            <input type="number" id="required" placeholder="Eg: 75">
+        </div>
+
+        <div class="questions">
+            <label for="left">Number of Classes Left</label>
+            <input type="number" id="left" placeholder="Eg: 10">
+        </div>
+
+    </div>
+
+    <button onclick="calculate()">Calculate Attendance</button>
+
+    <div id="result"></div>
+
+    <!-- JavaScript (must be last) -->
+    <script src="index.js"></script>
+
+</body>
+</html>
